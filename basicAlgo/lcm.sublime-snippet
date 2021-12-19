@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+long long int gcd(long long int a, long long int b)
+{
+  if (b == 0)
+    return a;
+  return gcd(b, a % b);
+}
+long long int lcm(int a, int b)
+{
+    return (a / gcd(a, b)) * b;
+}
+]]></content>
+  <tabTrigger>lcm</tabTrigger>
+  <description>LCM between two number</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

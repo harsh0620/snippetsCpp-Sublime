@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+void inOrder(Node *temp)
+{
+    if (temp != NULL)
+    {
+        inOrder(temp->left);
+        cout << temp->data << ' ';
+        inOrder(temp->right);
+    }
+}
+]]></content>
+  <tabTrigger>inorder</tabTrigger>
+  <description>Tree Inorder</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

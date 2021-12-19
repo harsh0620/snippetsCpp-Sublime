@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+bool isBalanced(Node *root)
+{
+    if (root == NULL)
+    {
+        return true;
+    }
+    if (isBalanced(root->left) == false)
+    {
+        return false;
+    }
+    if (isBalanced(root->right) == false)
+    {
+        return false;
+    }
+    if (abs(height(root->left) - height(root->right)) <= 1)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+]]></content>
+  <tabTrigger>isBalancedSimple</tabTrigger>
+  <description>Tree Balanced or Not Simple</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

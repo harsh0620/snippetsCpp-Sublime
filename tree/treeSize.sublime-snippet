@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+int getSize(Node *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
+    return 1 + getSize(root->left) + getSize(root->right);
+}
+]]></content>
+  <tabTrigger>treeSize</tabTrigger>
+  <description>Tree Size</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

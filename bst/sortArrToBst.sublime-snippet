@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+Node *sortedArrToBST(int a[], int start, int end)
+{
+    if (start > end)
+    {
+        return NULL;
+    }
+
+    int mid = (start + end) / 2;
+    Node *root = new Node(a[mid]);
+
+    root->left = sortedArrToBST(a, start, mid - 1);
+    root->right = sortedArrToBST(a, mid + 1, end);
+
+    return root;
+}
+]]></content>
+  <tabTrigger>sortArrToBst</tabTrigger>
+  <description>Sorted array to Bst</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

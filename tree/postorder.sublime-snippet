@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+int c = 0;
+void postOrder(Node *temp)
+{
+    if (temp != NULL)
+    {
+        postOrder(temp->left);
+        postOrder(temp->right);
+        cout << temp->data << ' ';
+        if (temp->right == NULL && temp->left == NULL)
+        {
+            c++;
+        }
+    }
+}
+]]></content>
+  <tabTrigger>postorder</tabTrigger>
+  <description>Tree Postorder</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

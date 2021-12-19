@@ -1,0 +1,47 @@
+<snippet>
+  <content><![CDATA[
+void BFS()
+{
+    int n, m;
+    cin >> n >> m;
+    vector<bool> vis(n + 1, false);
+    vector<vector<int>> adj(n + 1);
+    for (int i = 0; i < m; i++)
+    {
+        int u, v;
+        cin >> u >> v;
+        adj[u].pb(v);
+        adj[v].pb(u);
+    }
+    queue<int> q;
+    for (int i = 0; i < n; i++)
+    {
+        if (!vis[i])
+        {
+
+            q.push(i);
+            vis[i] = true;
+            while (!q.empty())
+            {
+                int node = q.front();
+
+                q.pop();
+                cout << node << " ";
+                for (auto x : adj[node])
+                {
+                    if (!vis[x])
+                    {
+                        vis[x] = true;
+                        q.push(x);
+                    }
+                }
+            }
+        }
+    }
+}
+]]></content>
+  <tabTrigger>bfs</tabTrigger>
+  <description>BFS in Graph</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

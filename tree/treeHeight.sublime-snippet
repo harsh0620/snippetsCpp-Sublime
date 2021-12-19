@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+int height(Node *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
+    return max(height(root->left), height(root->right)) + 1;
+}
+]]></content>
+  <tabTrigger>treeHeight</tabTrigger>
+  <description>Tree Height</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

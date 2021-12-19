@@ -1,0 +1,40 @@
+<snippet>
+  <content><![CDATA[
+void leftView(Node *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    queue<Node *> q;
+    q.push(root);
+
+    while (!q.empty())
+    {
+        int n = q.size();
+        for (int i = 1; i <= n; i++)
+        {
+            Node *curr = q.front();
+            q.pop();
+
+            if (i == 1)
+            {
+                cout << curr->data << " ";
+            }
+            if (curr->left != NULL)
+            {
+                q.push(curr->left);
+            }
+            if (curr->right != NULL)
+            {
+                q.push(curr->right);
+            }
+        }
+    }
+}
+]]></content>
+  <tabTrigger>treeLeftView</tabTrigger>
+  <description>Tree Left View</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

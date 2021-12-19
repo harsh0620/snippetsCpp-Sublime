@@ -1,0 +1,33 @@
+<snippet>
+  <content><![CDATA[
+void flatten(Node *root)
+{
+    if (root == NULL || (root->left == NULL || root->right == NULL))
+    {
+        return;
+    }
+
+    if (root->left != NULL)
+    {
+        flatten(root->left);
+
+        Node *temp = root->right;
+        root->right = root->left;
+        root->left = NULL;
+
+        Node *t = root->right;
+
+        while (t->right != NULL)
+        {
+            t = t->right;
+        }
+        t->right = temp;
+    }
+    flatten(root->right);
+}
+]]></content>
+  <tabTrigger>flatten</tabTrigger>
+  <description>Flatten Binary Tree</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

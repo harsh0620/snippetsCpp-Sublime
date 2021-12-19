@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+for(auto it:v)
+    {
+        cout<<it<<" ";
+    }cout<<endl;
+]]></content>
+  <tabTrigger>autov</tabTrigger>
+  <description>Print element of vector with auto</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

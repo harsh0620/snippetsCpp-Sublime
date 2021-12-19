@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+long long int max(long long int a, long long int b)
+{
+    if (a >= b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+]]></content>
+  <tabTrigger>maxll</tabTrigger>
+  <description>Maximum Function with long long int</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

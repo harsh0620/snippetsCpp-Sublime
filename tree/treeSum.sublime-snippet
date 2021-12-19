@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+int getSum(Node *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
+    return getSum(root->left) + getSum(root->right) + root->data;
+}
+]]></content>
+  <tabTrigger>treeSum</tabTrigger>
+  <description>Tree Node Sum</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

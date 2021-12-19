@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+struct Node
+{
+    int data;
+    Node *left;
+    Node *right;
+
+    Node(int k)
+    {
+        data = k;
+        left = right = NULL;
+    }
+};
+]]></content>
+  <tabTrigger>tstruct</tabTrigger>
+  <description>Tree Structure</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

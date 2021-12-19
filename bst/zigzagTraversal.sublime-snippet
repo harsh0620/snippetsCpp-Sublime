@@ -1,0 +1,58 @@
+<snippet>
+  <content><![CDATA[
+void zigzagTraversal(Node *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    stack<Node *> currLevel;
+    stack<Node *> nextLevel;
+
+    bool leftToRight = true;
+
+    currLevel.push(root);
+    while (!currLevel.empty())
+    {
+        Node *temp = currLevel.top();
+        currLevel.pop();
+
+        if (temp)
+        {
+            cout << temp->data << " ";
+            if (leftToRight)
+            {
+                if (temp->left)
+                {
+                    nextLevel.push(temp->left);
+                }
+                if (temp->right)
+                {
+                    nextLevel.push(temp->right);
+                }
+            }
+            else
+            {
+                if (temp->right)
+                {
+                    nextLevel.push(temp->right);
+                }
+                if (temp->left)
+                {
+                    nextLevel.push(temp->left);
+                }
+            }
+        }
+        if (currLevel.empty())
+        {
+            leftToRight = !leftToRight;
+            swap(currLevel, nextLevel);
+        }
+    }
+}
+]]></content>
+  <tabTrigger>zigzagTraversal</tabTrigger>
+  <description>zigzagTraversal Bst</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

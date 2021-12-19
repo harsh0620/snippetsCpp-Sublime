@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+int i=0;
+    while()
+    {	$1
+        i++;
+    }
+]]></content>
+  <tabTrigger>whilen</tabTrigger>
+  <description>While loop with size n</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

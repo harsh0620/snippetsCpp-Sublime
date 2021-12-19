@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+void preOrder(Node *temp)
+{
+    if (temp != NULL)
+    {
+        cout << temp->data << ' ';
+        preOrder(temp->left);
+        preOrder(temp->right);
+    }
+}
+]]></content>
+  <tabTrigger>preorder</tabTrigger>
+  <description>Tree Preorder</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

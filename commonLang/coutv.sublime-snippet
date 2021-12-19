@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+	for(int i=0;i<v.size();i++)
+    {
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+]]></content>
+  <tabTrigger>couta</tabTrigger>
+  <description>Print element of vector</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

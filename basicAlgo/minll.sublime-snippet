@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+long long int min(long long int a, long long int b)
+{
+    if (a >= b)
+    {
+        return b;
+    }
+    else
+    {
+        return a;
+    }
+}
+]]></content>
+  <tabTrigger>minll</tabTrigger>
+  <description>Minimum Function with long long int</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

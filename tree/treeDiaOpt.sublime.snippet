@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+int optDiameter(Node *root, int *ht)
+{
+    if (root == NULL)
+    {
+        *ht = 0;
+        return 0;
+    }
+
+    int lh = 0, rh = 0;
+
+    int lD = optDiameter(root->left, &lh);
+    int rD = optDiameter(root->right, &rh);
+    int currDiameter = lh + rh + 1;
+    *ht = max(lh, rh) + 1;
+
+    return max(currDiameter, max(lD, rD));
+}
+]]></content>
+  <tabTrigger>treeDiaOpt</tabTrigger>
+  <description>Tree Optimized Diameter</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

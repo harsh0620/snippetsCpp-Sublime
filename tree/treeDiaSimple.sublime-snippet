@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+int diameter(Node *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
+
+    int currDiameter = height(root->left) + height(root->right) + 1;
+
+    int lD = diameter(root->left);
+    int rD = diameter(root->right);
+
+    return max(currDiameter, max(lD, rD));
+}
+]]></content>
+  <tabTrigger>treeDiaSimple</tabTrigger>
+  <description>Tree Simple Diameter</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
