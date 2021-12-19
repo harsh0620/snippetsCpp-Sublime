@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "packages": [
+    {
+      "name": "snippetsCpp",
+      "description": "Sublime 3 Snippet that provide C++/C Snippets for Competitive Programming",
+      "author": "harsh0620",
+      "homepage": "https://github.com/harsh0620/snippetsCpp-Sublime",
+      "last_modified": "2021-12-19 13:00:00",
+      "releases": [
+        {
+          "sublime_text": "*",
+          "platforms": [
+            "windows"
+          ],
+          "tags": true
+        }
+      ]
+    }
+  ]
+}
