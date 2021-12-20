@@ -161,10 +161,10 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 
 ## Features
 
-![alt text](https://github.com/harsh0620/CodeSnippets/blob/main/img/Feature1.png)
-![alt text](https://github.com/harsh0620/CodeSnippets/blob/main/img/Feature2.png)
-![alt text](https://github.com/harsh0620/CodeSnippets/blob/main/img/Feature3.png)
-![alt text](https://github.com/harsh0620/CodeSnippets/blob/main/img/Feature4.png)
+![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime1.png)
+![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime2.png)
+![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime3.png)
+![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime4.png)
 
 ---
 
