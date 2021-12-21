@@ -8,6 +8,24 @@ This repository provides extension for Sublime editor which enables Sublime user
 
 ---
 
+## Installation
+
+- Clone the repo in your local system
+- open C:\Users\<YOURPCNAME>\AppData\Roaming\Sublime Text 3\Packages
+- copy the folder in the above location
+- now you can easily use all extension by typing prefixes
+
+---
+
+## Features
+
+![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime1.png)
+![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime2.png)
+![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime3.png)
+![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime4.png)
+
+---
+
 ## Author
 
 [Harsh Chandravanshi](https://harshchandravanshi.me): `Portfolio`
@@ -156,15 +174,6 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 |    Prefix | Uses/Method     |
 | --------: | --------------- |
 | `bsearch` | `Binary Search` |
-
----
-
-## Features
-
-![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime1.png)
-![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime2.png)
-![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime3.png)
-![alt text](https://github.com/harsh0620/snippetsCpp-Sublime/blob/main/img/sublime4.png)
 
 ---
 
